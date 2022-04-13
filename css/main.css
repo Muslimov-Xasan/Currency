@@ -1,0 +1,140 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 0;
+  margin-top: 100px;
+  padding: 0;
+  flex-direction: column;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  background-color: rgb(0, 255, 200);
+}
+
+img {
+  display: block;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.currency {
+  width: 540px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgb(37, 159, 159);
+}
+
+.currency__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.currency__item {
+  width: 160px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 5px;
+}
+
+.currency__item__title {
+  color: #fff;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.currency__item__text {
+  color: #fff;
+  margin: 0;
+}
+
+.currency__aside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.currency__inner {
+  width: 230px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.currency__inner__text {
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.currency__select {
+  width: 100%;
+  margin-bottom: 7px;
+  padding: 10px;
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 5px;
+  outline: none;
+}
+
+.currency__input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 5px;
+  outline: none;
+}
+
+.currency__input:focus {
+  box-shadow: 0px 0px 2px 1px rgb(155, 155, 238);
+}
+
+.currency__input:disabled{
+  background-color: transparent;
+}
+
+.currency__button{
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: opacity 0.15s ease;
+}
+
+.currency__button:active{
+  opacity: 0.7;
+}

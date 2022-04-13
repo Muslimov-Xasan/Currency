@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Currency</title>
+  </head>
+
+  <body>
+    <div class="currency">
+      <ul class="currency__list">
+        <li class="currency__item">
+          <p class="currency__item__title">RUB</p>
+          <p class="currency__item__text">00.00</p>
+        </li>
+
+        <li class="currency__item">
+          <p class="currency__item__title">USD</p>
+          <p class="currency__item__text">00.00</p>
+        </li>
+
+        <li class="currency__item">
+          <p class="currency__item__title">EUR</p>
+          <p class="currency__item__text">00.00</p>
+        </li>
+      </ul>
+
+      <form class="currency__form">
+        <div class="currency__aside">
+          <div class="currency__inner">
+            <p class="currency__inner__text">To:</p>
+
+            <select class="currency__select" name="currency-type">
+              <option value="USD">USD</option>
+              <option value="EUR">EURO</option>
+              <option value="RUB">RUBL</option>
+              <option value="UZS">UZS</option>
+            </select>
+
+            <input class="currency__input" type="number" step="any" />
+          </div>
+
+          <div class="currency__inner">
+            <p class="currency__inner__text">Do:</p>
+
+            <select class="currency__select" name="currency-type">
+              <option value="USD">USD</option>
+              <option value="EUR">EURO</option>
+              <option value="RUB">RUBL</option>
+              <option value="UZS">UZS</option>
+            </select>
+
+            <input class="currency__input" type="number" step="any" disabled/>
+          </div>
+        </div>
+
+        <button class="currency__button" type="submit">Convert</button>
+      </form>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
